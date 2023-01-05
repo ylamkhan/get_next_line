@@ -1,0 +1,33 @@
+hello1
+hkkhkhk
+hllhllh
+int main()
+{
+	int fd1 = open("text1.txt", O_CREAT | O_RDWR, 777);
+	int fd2 = open("text2.txt", O_CREAT | O_RDWR, 777);
+	int fd3 = open("text3.txt", O_CREAT | O_RDWR, 777);
+	int fd4 = open("text4.txt", O_CREAT | O_RDWR, 777);
+	int fd5 = open("text5.txt", O_CREAT | O_RDWR, 777);
+	int fd6 = open("text6.txt", O_CREAT | O_RDWR, 777);
+	int fd7 = open("text7.txt", O_CREAT | O_RDWR, 777);
+	int fd8 = open("text8.txt", O_CREAT | O_RDWR, 777);
+	int fd9 = open("text9.txt", O_CREAT | O_RDWR, 777);
+	// write(fd1, "hello1", 6);
+	// write(fd2, "hello2", 6);
+	// write(fd3, "hello3", 6);
+	// write(fd4, "hello4", 6);
+	// write(fd5, "hello5", 6);
+	// write(fd6, "hello6", 6);
+	// write(fd7, "hello7", 6);
+	// write(fd8, "hello8", 6);
+	// write(fd9, "hello9", 6);
+	int i = fd1;
+	while (i <= fd9)
+	{
+
+		printf("%s%s\n", get_next_line(i),get_next_line(i));
+		i++;
+
+	}
+
+}
